@@ -1,0 +1,13 @@
+.navcenter {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lispace {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navlinks :hover {
+    text-decoration: underline;
+}
