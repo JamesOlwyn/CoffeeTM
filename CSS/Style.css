@@ -34,7 +34,7 @@ h5.title {
     font-size: calc(12px + 1.5vw);
 }
 
-.jsToggle {
+.widthToggle {
     display: none;
 }
 
@@ -80,7 +80,7 @@ h1 {
     }
 }
 
-.footer {
+footer {
     position: fixed;
     left: 0;
     right: 0;
@@ -89,6 +89,12 @@ h1 {
     background-color: black;
     height: 7.5vh;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navFooter {
+    display: none;
     justify-content: space-around;
     align-items: center;
 }
@@ -102,11 +108,11 @@ h1 {
 }
 
 @media (max-width: 1400px) {
-    .jsToggle {
-        display: block;
+    .widthToggle {
+        display: flex;
     }
 
-    .footer {
+    footer {
         display: none;
     }
 }
