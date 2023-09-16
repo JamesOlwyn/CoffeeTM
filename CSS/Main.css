@@ -5,7 +5,22 @@
 body {
     margin: 0;
     padding: 0;
+    position: relative;
+    z-index: 0;
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5); 
+    z-index: 1; 
+}
+
+/* Navbar custom stylings */
 
 .navbar {
     min-height: 10vh
@@ -24,6 +39,8 @@ h5.title {
     display: flex;
     justify-content: space-evenly;
 }
+
+/* Navbar spacing + Mobile Setup */ 
 
 .lispace {
     padding-left: 50px;
@@ -50,13 +67,28 @@ h5.title {
     font-size: calc(12px + 1.5vh);
 }
 
+/* Background image */
+
 .masthead {
     background-size: cover;
     min-height: 100vh;
-    position: 	relative;
+    position: relative;
     color: white;
     text-shadow: 2px 2px 2px rgba(0,0,0,.2);
-    opacity: 0.35;
+    padding-top: 5%;
+    z-index: 2;
+    position: relative;
+}
+
+.masthead::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
 }
 
 h1 {
@@ -71,14 +103,7 @@ h1 {
     
 }
 
-@media (max-width: 768px) {
-    .masthead {
-        min-height: 30vh;
-    }
-    h1 {
-        font-size: calc(1.525rem + 3.3vw);
-    }
-}
+/* Footer styling */
 
 footer {
     position: fixed;
@@ -91,6 +116,8 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 2;
+    padding: 10px, 0px;
 }
 
 .navFooter {
@@ -107,7 +134,18 @@ footer {
     color: white;
 }
 
-@media (max-width: 1400px) {
+/* Screen size switches */
+
+@media (max-width: 768px) {
+    .masthead {
+        min-height: 30vh;
+    }
+    h1 {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+}
+
+@media (max-width: 1200px) {
     .widthToggle {
         display: flex;
     }
