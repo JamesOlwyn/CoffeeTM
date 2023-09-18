@@ -8,7 +8,7 @@
 }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .testimony {
@@ -24,7 +24,7 @@
     display: block;
     padding: 10px;
     text-shadow: none;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
     border-radius: 5px;
 }
 
@@ -84,6 +84,10 @@
 }
 
 @media (max-width: 1200px) {
+    .rowBorder {
+        padding: 0px 60px;
+    }
+
     .columnHalf {
         width: 100%;
     }
