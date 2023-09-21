@@ -9,10 +9,16 @@
 
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+
+.titleSlide {
+    font-size: larger;
+    color: white;
 }
 
 .testimony {
-    font-size: larger;
+    font-size: large;
 }
 
 .rowBorder {
