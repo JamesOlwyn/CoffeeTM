@@ -1,26 +1,3 @@
-/* CSS for the Index page */
-
-/* Carousel Images + Captions */
-
-.slideImage {
-    width: 100vw;
-    height: 50vh;
-}
-
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 5px;
-}
-
-.titleSlide {
-    font-size: larger;
-    color: white;
-}
-
-.testimony {
-    font-size: large;
-}
-
 .rowBorder {
     padding: 0px 30px;
     border: none;
@@ -60,7 +37,21 @@
     padding: 0px 10px;
 }
 
+.bannerImage {
+    border-radius: 15px;
+    padding: 10px 10px;
+    height: 40vh;
+    width: 80vw;
+}
+
 .columnImage {
+    border-radius: 15px;
+    padding: 10px 10px;
+    height: 125vh;
+    width: 25vw;
+}
+
+.qaImage {
     border-radius: 15px;
     padding: 10px 10px;
     height: 350px;
@@ -114,7 +105,13 @@
         font-size: xx-large;
     }
 
-    .testimony {
-        font-size: xx-large;
+    .columnImage {
+        width: 70vw;
     }
+
+    .bannerImage {
+        width: 60vw;
+        height: 20vh;
+    }
+
 }
