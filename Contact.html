@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/Style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <title>CoffeeTM Contact</title>
-    <style>
-        .contact-box {
-    background-color: rgba(0, 0, 0, 0.75);  /* Black with 75% transparency */
-    padding: 15px;
-    color: white; /* Changing text color to white for better visibility on black */
-}
-.contact-form-container {
-    background-color: rgba(0, 0, 0, 0.75);  /* Black with 75% transparency */
-    padding: 20px;
-    margin: 20px 0;
-    color: white; /* Changing text color to white for better visibility on black */
-}
-  </style>
+    <!-- Other meta tags and title -->
+    <title>CoffeeTM Home</title>
 </head>
+<body>
+    <!-- Content of the HTML page -->
+    <!-- Navbar -->
 
-<body class="black-text">
-      <nav class="navbar navbar-expand-xxl fixed-top bg-black navshadow">
+    <nav class="navbar navbar-expand-xxl fixed-top bg-black navshadow">
         <div class="container-fluid" style="padding-left: 10%; padding-right: 10%;">
             <a class="navbar-brand" href="#"><img src="Images/logoImage.png" alt="CoffeeTM Logo" width="70" height="70" class="d-inline-block align-text-left"></a>
             <h5 class="title" style="color: white;"><strong>CoffeeTM</strong></h5>
@@ -44,87 +34,150 @@
                     <li class="nav-item lispace">
                         <a class="nav-link navlinks" href="Contact.html" style="color: white;"><h5 class="navtext">Contacts</h5></a>
                     </li>
+                    <li class="nav-item lispace widthToggle">
+                        <p class="hidden">placeholder</p>
+                    </li>
+                    <li class="nav-item lispace navFooter widthToggle">
+                        <i class="fa-brands fa-facebook fa-2xl socialIcon"></i>
+                        <i class="fa-brands fa-facebook fa-2xl socialPH"></i>
+                        <i class="fa-brands fa-facebook fa-2xl socialIcon"></i>
+                        <i class="fa-brands fa-facebook fa-2xl socialPH"></i>
+                        <i class="fa-brands fa-facebook fa-2xl socialIcon"></i>
+                    </li>
+                    <li class="nav-item lispace widthToggle">
+                        <p class="hidden">placeholder</p>
+                    </li>
+                    <!--<li class="nav-item lispace">
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="socialMedia"><h5 class="navtext">Social</h5></button>
+                    </li>-->
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="masthead" style="background-image: url('./Images/728.jpg');">
-      <div class="container mt-5 pt-5">
+    <!-- Page Content -->
+    <div 
+        class="masthead"
+        style="background-image: url('./Images/728.jpg');">
+        <div>
+            <div class="container mt-5 pt-5">
   
-          <!-- Embed Google Map -->
-          <div style="padding: 20px 0;">
-              <iframe 
-                  src="https://www.google.com/maps/embed?..." 
-                  width="100%" 
-                  height="450" 
-                  style="border:0;" 
-                  allowfullscreen="" 
-                  loading="lazy">
-              </iframe>
-          </div>
-  
-          <!-- Separator Line with Padding -->
-          <hr class="thick-hr">
-  
-          <!-- Row with Two Columns -->
-          <div class="row mt-4">
-            <div class="col-lg-6 mb-4">
-                <!-- Placeholder Image, replace with your image -->
-                <img src="Images/krisztina-papp-fg69ALZG7DQ-unsplash.jpg" class="img-fluid" alt="Contact Image" style="height: 85%;">
-            </div>
-            <div class="col-lg-6">
-                <div class="contact-box" style="height: 300px; text-align: center;">
-                    <p>PH: 0800 83 83 83</p>
-                    <p>Email: jimbean@coffeetm.com</p>
-                    <p>Mon-Fri 8am-5pm</p>
-
+                <!-- Embed Google Map -->
+                <div style="padding: 20px 0;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16849.32781516144!2d164.0645670664868!3d-74.69586909476159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaf6c669bb85f8af5%3A0xf036b99d09a083f8!2sZucchelli%20Station%2C%20Antarctica!5e0!3m2!1sen!2snz!4v1695703635135!5m2!1sen!2snz" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+        
+                <!-- Separator Line with Padding -->
+                <hr class="thick-hr">
+        
+                <!-- Row with Two Columns -->
+                <div class="row mt-4">
+                  <div class="col-lg-6 mb-4">
+                      <!-- Placeholder Image, replace with your image -->
+                      <img src="Images/krisztina-papp-fg69ALZG7DQ-unsplash.jpg" class="img-fluid" alt="Contact Image" style="height: 85%;">
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="contact-info-box" style="margin: 10%; height: 200px; text-align: center;">
+                        <br>
+                        
+                        <h5>PH: 0800 83 83 83</h5>
+                        <h5>Email: jimbean@coffeetm.com</h5>
+                        <h5>Mon-Fri 8am-5pm</h5>
+      
+                      </div>
+                  </div>
+              </div>
+                <hr class="thick-hr">
+                
+                <!-- Contact Form for Mobile (Accordion Style) -->
+   <div class="d-block d-md-none accordion" id="contactFormAccordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header accordion-title" id="headingForm">
+            <button style="color: white;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseForm" aria-expanded="true" aria-controls="collapseForm">
+                Contact Form
+            </button>
+        </h2>
+        <div id="collapseForm" class="accordion-collapse collapse show accordion-content" aria-labelledby="headingForm" data-bs-parent="#contactFormAccordion">
+            <div class="accordion-body" style="background-color: black; opacity: 75%; padding: 20px; margin: 20px 0;">
+                    <form action="#" method="post">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="First Name..." name="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Last Name..." name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Email..." name="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="num" data-validation="number" data-validation-allowing="negative,number" input name="color" data-validation="number" datavalidation-ignore="$" required="required" class="form-control" id="phone_no" placeholder="Phone Number">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message..." name="message"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-          <hr class="thick-hr">
-
-          <div class="contact-form-container" style="background-color: white; padding: 20px; margin: 20px 0;">
+    </div>
     
-            <form action="#" method="post"> <!-- You'll need to replace "#" with the actual action URL where the form data should be sent. -->
-                
-                <!-- First Row with First Name and Last Name -->
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="First Name..." name="firstName" required>
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Last Name..." name="lastName" required>
-                    </div>
+    <!-- Contact Form for Larger Screens -->
+    <div class="d-none d-md-block" style="background-color: padding: 20px; margin: 20px 0;">
+        <form action="#" method="post">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="First Name..." name="firstName" required>
                 </div>
-                
-                <!-- Second Row with Email and Other -->
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <input type="email" class="form-control" placeholder="Email..." name="email" required>
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Other?" name="other">
-                    </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Last Name..." name="lastName" required>
                 </div>
-                
-                <!-- Textarea box for detailed text -->
-                <div class="mb-3">
-                    <textarea class="form-control" rows="4" placeholder="Your Message..." name="message"></textarea>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Email..." name="email" required>
                 </div>
-                
-                <!-- Submit Button -->
-                <div class="text-center"> <!-- This will center the button -->
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="col-md-6">
+                    <input type="text" name="num" data-validation="number" data-validation-allowing="negative,number" input name="color" data-validation="number" datavalidation-ignore="$" required="required" class="form-control" id="phone_no" placeholder="Phone Number">
                 </div>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" rows="4" placeholder="Your Message..." name="message"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
                 
-            </form>
-            
-        </div>
+       
 
+
+    <!-- Footer -->
+    <footer>
+        <i class="fa-brands fa-facebook fa-2xl socialPH"></i>
+        <i class="fa-brands fa-facebook fa-2xl socialIcon"></i>
+        <i class="fa-brands fa-facebook fa-2xl socialIcon"></i>
+        <i class="fa-brands fa-facebook fa-2xl socialIcon"></i>
+        <i class="fa-brands fa-facebook fa-2xl socialPH"></i>
+    </footer>
+
+    <!-- Javascript Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="JavaScript/Script.js"></script>
     <script src="https://kit.fontawesome.com/edbe248760.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
