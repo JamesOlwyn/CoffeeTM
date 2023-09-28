@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Stylesheets (Main for all pages, Individual Page Styles, Bootstrap) -->
     <link rel="stylesheet" type="text/css" href="CSS/Main.css">
     <link rel="stylesheet" type="text/css" href="CSS/Index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <!-- Other meta tags and title -->
     <title>CoffeeTM Home</title>
+    <link rel="icon" type="image/x-icon" href="Images/logoImage.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <!-- Content of the HTML page -->
-    <!-- Navbar -->
 
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-xl fixed-top bg-black navshadow">
         <div class="container-fluid" style="padding-left: 10%; padding-right: 10%;">
-            <a class="navbar-brand" href="#"><img src="Images/logoImage.png" alt="CoffeeTM Logo" width="70" height="70" class="d-inline-block align-text-left"></a>
-            <h5 class="title" style="color: white;"><strong>CoffeeTM</strong></h5>
+            <!-- Brand image and name -->
+            <a class="navbar-brand" href="Index.html"><img src="Images/logoImage.png" alt="CoffeeTM Logo" width="70" height="70" class="d-inline-block align-text-left"></a>
+            <a class="link" href="Index.html"><h5 class="title" style="color: white;"><strong>CoffeeTM</strong></h5></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <i class="fa-solid fa-bars" style="color:#fff; font-size: calc(12px + 1.5vh);"></i>
                 </span>
             </button>
+            <!-- Navbar items -->
             <div class="collapse navbar-collapse navcenter" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item lispace">
@@ -34,15 +39,16 @@
                     <li class="nav-item lispace">
                         <a class="nav-link navlinks" href="Contact.html" style="color: white;"><h5 class="navtext">Contacts</h5></a>
                     </li>
+                    <!-- Mobile elements, placeholder spacers + Icon links -->
                     <li class="nav-item lispace widthToggle">
                         <p class="hidden">placeholder</p>
                     </li>
                     <li class="nav-item lispace navFooter widthToggle">
-                        <i class="fa-brands fa-facebook fa-xl socialIcon"></i>
+                        <a class="link" href="https://www.facebook.com/profile.php?id=61551658123049" target="_blank"><i class="fa-brands fa-facebook fa-xl socialIcon"></i></a>
                         <i class="fa-brands fa-facebook fa-xl socialPH"></i>
-                        <i class="fa-brands fa-instagram fa-xl socialIcon"></i>
+                        <a class="link" href="https://www.instagram.com/jameshoward4002/" target="_blank"><i class="fa-brands fa-instagram fa-xl socialIcon"></i></a>
                         <i class="fa-brands fa-facebook fa-xl socialPH"></i>
-                        <i class="fa-brands fa-youtube fa-xl socialIcon"></i>
+                        <a class="link" href="https://www.youtube.com/channel/UCbDxsDHL6ugOhhohmzBKNNA" target="_blank"><i class="fa-brands fa-youtube fa-xl socialIcon"></i></a>
                     </li>
                     <li class="nav-item lispace widthToggle">
                         <p class="hidden">placeholder</p>
@@ -65,6 +71,7 @@
             <!-- Carousel Slideshow -->
             <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
+                    <!-- Item 1 -->
                     <div class="carousel-item active">
                         <img src="Images/slide1.jpg" class="d-block w-100 slideImage" alt="Slide Image 1">
                         <div class="carousel-caption d-none d-md-block">
@@ -79,6 +86,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Item 2 -->
                     <div class="carousel-item">
                         <img src="Images/slide2.jpg" class="d-block w-100 slideImage" alt="Slide Image 2">
                         <div class="carousel-caption d-none d-md-block">
@@ -93,6 +101,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Item 3 -->
                     <div class="carousel-item">
                         <img src="Images/slide3.jpg" class="d-block w-100 slideImage" alt="Slide Image 3">
                         <div class="carousel-caption d-none d-md-block">
@@ -141,18 +150,21 @@
             <br>
             <div class="rowBorder">
                 <div class="contentRow">
+                    <!-- Row Item 1 -->
                     <div class="columnThirds">
                         <h4 class="title">Milk Coffee</h4>
                         <img class="columnImage" src="Images/milkcoffee.png" alt="Milk Coffee">
                         <h4 class="title">Mochaccino: $8.99</h4>
                     </div>
                     <p class="mobileSeparator">Placeholder</p>
+                    <!-- Row Item 2 -->
                     <div class="columnThirds">
                         <h4 class="title">Black Coffee</h4>
                         <img class="columnImage" src="Images/blackcoffee.jpg" alt="Black Coffee">
                         <h4 class="title">Long Black: $6.99</h4>
                     </div>
                     <p class="mobileSeparator">Placeholder</p>
+                    <!-- Row Item 3 -->
                     <div class="columnThirds">
                         <h4 class="title">House Tea</h4>
                         <img class="columnImage" src="Images/tea.jpg" alt="Tea">
@@ -172,12 +184,14 @@
             <br>
             <div class="rowBorder">
                 <div class="contentRow">
+                    <!-- Row Item 1 -->
                     <div class="columnHalf">
                         <h4 class="title">Weekly Special</h4>
                         <img class="columnImage" src="Images/chocmuffin.jpg" alt="Chocolate Muffin">
                         <h4 class="title">House Muffins: $3.99</h4>
                     </div>
                     <p class="mobileSeparator">Placeholder</p>
+                    <!-- Row Item 2 -->
                     <div class="columnHalf">
                         <h4 class="title">Monthly Special</h4>
                         <img class="columnImage" src="Images/icedcoffee.jpg" alt="Iced Coffee">
@@ -186,6 +200,7 @@
                 </div>
             </div>
             <br>
+            <!-- CTA Map Link (Contact Page) -->
             <div class="rowBorder">
                 <div class="contentRow">
                     <div class="columnFull">
@@ -199,9 +214,10 @@
 
     <!-- Footer -->
     <footer>
-        <i class="fa-brands fa-facebook fa-lg socialIcon"></i>
-        <i class="fa-brands fa-instagram fa-lg socialIcon"></i>
-        <i class="fa-brands fa-youtube fa-lg socialIcon"></i>
+        <p class="footerText">Copyright CoffeeTM 2023</p>
+        <a class="link" href="https://www.facebook.com/profile.php?id=61551658123049" target="_blank"><i class="fa-brands fa-facebook fa-lg socialIcon"></i></a>
+        <a class="link" href="https://www.instagram.com/jameshoward4002/" target="_blank"><i class="fa-brands fa-instagram fa-lg socialIcon"></i></a>
+        <a class="link" href="https://www.youtube.com/channel/UCbDxsDHL6ugOhhohmzBKNNA" target="_blank"><i class="fa-brands fa-youtube fa-lg socialIcon"></i></a>
     </footer>
 
     <!-- Javascript Scripts-->

@@ -19,6 +19,10 @@ body::before {
     z-index: 1; 
 }
 
+.link {
+    text-decoration: none;
+}
+
 /* Navbar custom stylings */
 
 .navbar {
@@ -112,6 +116,11 @@ footer {
     align-items: center;
     z-index: 2;
     padding: 10px, 0px;
+}
+
+.footerText {
+    color: white;
+    padding-top: 15px;
 }
 
 .navFooter {
