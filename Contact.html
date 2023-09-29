@@ -66,9 +66,11 @@
 					<div class="col-lg-6">
 						<div class="contact-info-box" style="margin: 10%; height: 200px; text-align: center;">
 							<br>
-							<h5>PH: 0800 83 83 83</h5>
-							<h5>Email: jimbean@coffeetm.com</h5>
-							<h5>Mon-Fri 8am-5pm</h5>
+                            <div class="black-box">
+                                <h5>PH: 0800 83 83 83</h5>
+                                <h5>Email: jimbean@coffeetm.com</h5>
+                                <h5>Mon-Fri 8am-5pm</h5>
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -76,7 +78,7 @@
 				<!-- Contact Form for Mobile (Accordion Style) -->
 				<div class="d-block d-md-none accordion" id="contactFormAccordion">
 					<div class="accordion-item">
-						<h2 class="accordion-header accordion-title" id="headingForm"><button aria-controls="collapseForm" aria-expanded="true" class="accordion-button" data-bs-target="#collapseForm" data-bs-toggle="collapse" style="color: white;" type="button">Contact Form</button></h2>
+						<h2 class="accordion-header accordion-title" id="headingForm"><button aria-controls="collapseForm" aria-expanded="true" class="accordion-button" data-bs-target="#collapseForm" data-bs-toggle="collapse" style="color: black; text-align: center;" type="button">Contact Form</button></h2>
 						<div aria-labelledby="headingForm" class="accordion-collapse collapse show accordion-content" data-bs-parent="#contactFormAccordion" id="collapseForm">
 							<div class="accordion-body" style="background-color: black; opacity: 75%; padding: 20px; margin: 20px 0;">
 								<form action="#" method="post">
@@ -107,33 +109,35 @@
 						</div>
 					</div>
 				</div><!-- Contact Form for Larger Screens -->
-				<div class="d-none d-md-block" style="background-color: padding: 20px; margin: 20px 0;">
-					<form action="#" method="post">
-						<div class="row mb-3">
-							<div class="col-md-6">
-								<input class="form-control" name="firstName" placeholder="First Name..." required="" type="text">
-							</div>
-							<div class="col-md-6">
-								<input class="form-control" name="lastName" placeholder="Last Name..." required="" type="text">
-							</div>
-						</div>
-						<div class="row mb-3">
-							<div class="col-md-6">
-								<input class="form-control" name="email" placeholder="Email..." required="" type="email">
-							</div>
-							<div class="col-md-6">
-								<input class="form-control" data-validation="number" data-validation-allowing="negative,number" id="phone_no" name="color" placeholder="Phone Number" required="required" type="text">
-							</div>
-						</div>
-						<div class="mb-3">
-							<textarea class="form-control" name="message" placeholder="Your Message..." rows="4"></textarea>
-						</div>
-						<div class="text-center">
-							<button class="btn btn-primary" type="submit">Submit</button>
-						</div>
-					</form>
-				</div>
-			</div><br>
+                <div class="black-box">
+                    <div class="d-none d-md-block" style="padding: 20px; margin: 20px 0;">
+                        <form action="#" method="post">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <input class="form-control" name="firstName" placeholder="First Name..." required="" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form-control" name="lastName" placeholder="Last Name..." required="" type="text">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <input class="form-control" name="email" placeholder="Email..." required="" type="email">
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form-control" data-validation="number" data-validation-allowing="negative,number" id="phone_no" name="color" placeholder="Phone Number" required="required" type="text">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" name="message" placeholder="Your Message..." rows="4"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div><br>
 			<br>
 			<br>
 		</div><!-- Footer -->

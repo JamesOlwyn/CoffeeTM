@@ -48,6 +48,11 @@
     margin: 20px 0;
 }
 
-
+.black-box {
+    background-color: rgba(0, 0, 0, 0.75); /* This creates a black background with 75% opacity */
+    padding: 20px; /* Adjust as needed for spacing */
+    margin-top: 20px; /* Space between the form and the box */
+    color: white; /* Set the text color to white so it contrasts with the black background */
+}
 
 
