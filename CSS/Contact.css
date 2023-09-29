@@ -5,6 +5,14 @@
     background-color: #000000;
 }
 
+iframe {
+    border-radius: 15px;
+}
+
+form {
+    border-radius: 15px;
+}
+
 .contact-form {
     width: 60%;
     margin: 0 auto;
@@ -49,10 +57,22 @@
 }
 
 .black-box {
+    border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.75); /* This creates a black background with 75% opacity */
     padding: 20px; /* Adjust as needed for spacing */
     margin-top: 20px; /* Space between the form and the box */
     color: white; /* Set the text color to white so it contrasts with the black background */
 }
 
-
+@media (max-width: 768px) {
+    img[alt="Contact Image"] {
+        padding-left: 0%; /* removes the left padding */
+        width: 100%; /* makes the image take the full width of its container */
+        height: auto; /* keeps the image's aspect ratio */
+    }
+}
+@media (max-width: 768px) { 
+    .form-black-box {
+        display: none; /* This will hide the black box on mobile view */
+    }
+}
