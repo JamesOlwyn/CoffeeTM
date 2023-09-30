@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Stylesheets (Main for all pages, Individual Page Styles, Bootstrap) -->
+    <link rel="stylesheet" type="text/css" href="CSS/Main.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <!-- Other meta tags and title -->
+    <title>CoffeeTM Home</title>
+    <link rel="icon" type="image/x-icon" href="Images/logoImage.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!-- Content of the HTML page -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl fixed-top bg-black navshadow">
+        <div class="container-fluid" style="padding-left: 10%; padding-right: 10%;">
+            <!-- Brand image and name -->
+            <a class="navbar-brand" href="Index.html"><img src="Images/logoImage.png" alt="CoffeeTM Logo" width="70" height="70" class="d-inline-block align-text-left"></a>
+            <a class="link" href="Index.html"><h5 class="title" style="color: white;"><strong>CoffeeTM</strong></h5></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars" style="color:#fff; font-size: calc(12px + 1.5vh);"></i>
+                </span>
+            </button>
+            <!-- Navbar items -->
+            <div class="collapse navbar-collapse navcenter" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item lispace">
+                        <a class="nav-link navlinks" aria-current="page" href="Index.html" style="color: white;"><h5 class="navtext">Home</h5></a>
+                    </li>
+                    <li class="nav-item lispace">
+                        <a class="nav-link active navlinks" href="Menu.html" style="color: white;"><h5 class="navtext"><u>Menu</u></h5></a>
+                    </li>
+                    <li class="nav-item lispace">
+                        <a class="nav-link navlinks" href="History.html" style="color: white;"><h5 class="navtext">History</h5></a>
+                    </li>
+                    <li class="nav-item lispace">
+                        <a class="nav-link navlinks" href="Contact.html" style="color: white;"><h5 class="navtext">Contacts</h5></a>
+                    </li>
+                    <!-- Mobile elements, placeholder spacers + Icon links -->
+                    <li class="nav-item lispace widthToggle">
+                        <p class="hidden">placeholder</p>
+                    </li>
+                    <li class="nav-item lispace navFooter widthToggle">
+                        <a class="link" href="https://www.facebook.com/profile.php?id=61551658123049" target="_blank"><i class="fa-brands fa-facebook fa-xl socialIcon"></i></a>
+                        <i class="fa-brands fa-facebook fa-xl socialPH"></i>
+                        <a class="link" href="https://www.instagram.com/jameshoward4002/" target="_blank"><i class="fa-brands fa-instagram fa-xl socialIcon"></i></a>
+                        <i class="fa-brands fa-facebook fa-xl socialPH"></i>
+                        <a class="link" href="https://www.youtube.com/channel/UCbDxsDHL6ugOhhohmzBKNNA" target="_blank"><i class="fa-brands fa-youtube fa-xl socialIcon"></i></a>
+                    </li>
+                    <li class="nav-item lispace widthToggle">
+                        <p class="hidden">placeholder</p>
+                    </li>
+                    <!-- Potential method for mobile social media popout -->
+                    <!--<li class="nav-item lispace">
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="socialMedia"><h5 class="navtext">Social</h5></button>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div 
+        class="masthead"
+        style="background-image: url('./Images/728.jpg');">
+        <div>
+            <br>
+            <br>
+            <!-- Mobile formatting workaround -->
+            <p class="mobileSeparator">Placeholder</p>
+            <!-- Page Banner Image -->
+            <div class="rowBorder">
+                <div class="contentRow">
+                    <div class="columnFull">
+                        <img src="Images/menuBanner.jpeg" class="bannerImage" alt="Menu Banner">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Title above menu -->
+            <div class="rowBorder">
+                <div class="contentRow">
+                    <div class="columnFull">
+                        <h1 class="title">CoffeeTM Menu</h1>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Menu Items -->
+            <div class="rowBorder">
+                <div class="contentRow">
+                    <div class="columnThirds">
+                        <img src="Images/Menu1.png" class="columnImage" alt="Menu Milk Coffee">
+                    </div>
+                    <p class="mobileSeparator">Placeholder</p>
+                    <div class="columnThirds">
+                        <img src="Images/Menu2.png" class="columnImage" alt="Menu Black Coffee">
+                    </div>
+                    <p class="mobileSeparator">Placeholder</p>
+                    <div class="columnThirds">
+                        <img src="Images/Menu3.png" class="columnImage" alt="Menu Tea">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- QA Title -->
+            <div class="rowBorder">
+                <div class="contentRow">
+                    <div class="columnFull">
+                        <h1 class="title">Quality Assurance</h1>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- QA Items -->
+            <div class="rowBorder">
+                <div class="contentRow">
+                    <!-- Item 1 -->
+                    <div class="columnHalf">
+                        <h4 class="titleSmall">Our Beans</h4>
+                        <img src="Images/coffeeBeans.jpg" alt="Beans" class="qaImage">
+                        <h4 class="text">We source our beans directly from the legendary Giant's Beanstalk,</h4>
+                        <h4 class="text">so you get the biggest caffeine kick in the land.</h4>
+                    </div>
+                    <p class="mobileSeparator">Placeholder</p>
+                    <!-- Item 2 -->
+                    <div class="columnHalf">
+                        <h4 class="titleSmall">Our Milk</h4>
+                        <img src="Images/coffeeMilk.jpg" alt="Milk" class="qaImage">
+                        <h4 class="text">We source milk from cows who live on a diet of dairy milk,</h4>
+                        <h4 class="text">so you get more milk per milk.</h4>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- CTA Map Link (Contact Page) -->
+            <div class="rowBorder">
+                <div class="contentRow">
+                    <div class="columnFull">
+                        <a href="Contact.html" class="ctaButton"><h4 class="title">Find Your Nearest CoffeeTM Location</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footerText">Copyright CoffeeTM 2023</p>
+        <a class="link" href="https://www.facebook.com/profile.php?id=61551658123049" target="_blank"><i class="fa-brands fa-facebook fa-lg socialIcon"></i></a>
+        <a class="link" href="https://www.instagram.com/jameshoward4002/" target="_blank"><i class="fa-brands fa-instagram fa-lg socialIcon"></i></a>
+        <a class="link" href="https://www.youtube.com/channel/UCbDxsDHL6ugOhhohmzBKNNA" target="_blank"><i class="fa-brands fa-youtube fa-lg socialIcon"></i></a>
+    </footer>
+
+    <!-- Javascript Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JavaScript/Script.js"></script>
+    <script src="https://kit.fontawesome.com/edbe248760.js" crossorigin="anonymous"></script>
+</body>
+</html>

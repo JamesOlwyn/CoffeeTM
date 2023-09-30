@@ -1,0 +1,130 @@
+.rowBorder {
+    padding: 0px 30px;
+    border: none;
+}
+
+.contentRow {
+    display: block;
+    padding: 10px;
+    text-shadow: none;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+
+.contentRow:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.columnFull {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.columnThirds {
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.columnHalf {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.bannerImage {
+    border-radius: 15px;
+    padding: 10px 10px;
+    height: 40vh;
+    width: 80vw;
+}
+
+.columnImage {
+    border-radius: 15px;
+    padding: 10px 10px;
+    height: 125vh;
+    width: 25vw;
+}
+
+.qaImage {
+    border-radius: 15px;
+    padding: 10px 10px;
+    height: 350px;
+    width: 350px;
+}
+
+.title {
+    color: white;
+}
+
+.titleSmall {
+    color: white;
+}
+
+.text {
+    color: white;
+    font-size: larger;
+}
+
+.mobileSeparator {
+    display: none;
+    color: rgba(255, 255, 255, 0);
+}
+
+.ctaButton {
+    text-decoration: none;
+}
+
+.ctaButton :hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .rowBorder {
+        padding: 0px 30px;
+    }
+
+    .columnHalf {
+        width: 100%;
+    }
+
+    .columnThirds {
+        width: 100%;
+    }
+
+    .mobileSeparator {
+        display: block;
+    }
+
+    .title {
+        font-size: xx-large;
+    }
+
+    .titleSmall {
+        font-size: x-large;
+    }
+
+    .text {
+        font-size: large;
+    }
+
+    .columnImage {
+        width: 75vw;
+    }
+
+    .qaImage {
+        width: 200px;
+        height: 200px;
+    }
+
+    .bannerImage {
+        width: 75vw;
+        height: 20vh;
+    }
+
+}
