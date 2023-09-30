@@ -58,6 +58,17 @@ iframe, form {
     margin: 20px 0;
 }
 
+/* Colour changes for mobile accordion */
+.accordion-colour {
+    --bs-accordion-bg: rgba(0, 0, 0, 0.5);
+    --bs-accordion-border-color: rgba(0, 0, 0, 0.75);
+}
+
+.accordion-colour-header {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
 /* Generic black box style */
 .black-box {
     border-radius: 15px;
