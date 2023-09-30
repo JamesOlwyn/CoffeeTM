@@ -79,6 +79,10 @@
     color: white;
 }
 
+.titleSmall {
+    color: white;
+}
+
 /* Generic text styles */
 .text {
     color: white;
@@ -104,7 +108,7 @@
 @media (max-width: 1200px) {
     /* Adjust padding for .rowBorder */
     .rowBorder {
-        padding: 0px 60px;
+        padding: 0px 30px;
     }
 
     /* Adjust column widths for responsive layout */
@@ -113,14 +117,33 @@
         width: 100%;
     }
 
+    .columnImage {
+        height: 200px;
+        width: 200px;
+    }
+
+    .slideImage {
+        height: 40vh;
+    }
+
     /* Display the mobile separator */
     .mobileSeparator {
         display: block;
     }
 
     /* Adjust font sizes for various text components */
-    .title,
-    .text,
+    .title {
+        font-size: xx-large;
+    }
+
+    .titleSmall {
+        font-size: x-large;
+    }
+
+    .text {
+        font-size: larger;
+    }
+
     .testimony {
         font-size: xx-large;
     }

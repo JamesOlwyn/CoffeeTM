@@ -80,6 +80,10 @@
     color: white;
 }
 
+.titleSmall {
+    color: white;
+}
+
 /* General text styling */
 .text {
     color: white;
@@ -112,7 +116,7 @@
 @media (max-width: 1200px) {
     /* Increase padding for row border */
     .rowBorder {
-        padding: 0px 60px;
+        padding: 0px 30px;
     }
 
     /* Adjust column widths */
@@ -134,17 +138,26 @@
         font-size: xx-large;
     }
 
+    .titleSmall {
+        font-size: x-large;
+    }
+
     .text {
-        font-size: xx-large;
+        font-size: larger;
     }
 
     /* Adjust image widths */
     .columnImage {
-        width: 70vw;
+        width: 75vw;
     }
 
     .bannerImage {
-        width: 60vw;
+        width: 80vw;
         height: 20vh;
+    }
+
+    .qaImage {
+        height: 200px;
+        width: 200px;
     }
 }
