@@ -71,6 +71,10 @@
     color: white;
 }
 
+.titleSmall {
+    color: white;
+}
+
 .text {
     color: white;
     font-size: larger;
@@ -90,8 +94,12 @@
 }
 
 @media (max-width: 1200px) {
+    .slideImage {
+        height: 40vh;
+    }
+
     .rowBorder {
-        padding: 0px 60px;
+        padding: 0px 30px;
     }
 
     .columnHalf {
@@ -102,6 +110,11 @@
         width: 100%;
     }
 
+    .columnImage {
+        height: 200px;
+        width: 200px;
+    }
+
     .mobileSeparator {
         display: block;
     }
@@ -110,11 +123,15 @@
         font-size: xx-large;
     }
 
+    .titleSmall {
+        font-size: x-large;
+    }
+
     .text {
-        font-size: xx-large;
+        font-size: large;
     }
 
     .testimony {
-        font-size: xx-large;
+        font-size: large;
     }
 }
