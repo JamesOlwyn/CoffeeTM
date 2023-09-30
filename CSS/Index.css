@@ -1,31 +1,33 @@
-/* CSS for the Index page */
-
-/* Carousel Images + Captions */
-
+/* Image slide styles */
 .slideImage {
     width: 100vw;
     height: 50vh;
 }
 
+/* Carousel caption background */
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 5px;
 }
 
+/* Slide title text styles */
 .titleSlide {
     font-size: larger;
     color: white;
 }
 
+/* Testimonial text styles */
 .testimony {
     font-size: large;
 }
 
+/* Row with a border styling */
 .rowBorder {
     padding: 0px 30px;
     border: none;
 }
 
+/* Generic content row styling */
 .contentRow {
     display: block;
     padding: 10px;
@@ -34,18 +36,21 @@
     border-radius: 5px;
 }
 
+/* Clearfix for floated elements in .contentRow */
 .contentRow:after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
+/* Full width column */
 .columnFull {
     float: left;
     width: 100%;
     text-align: center;
 }
 
+/* One-third width column */
 .columnThirds {
     float: left;
     width: 33%;
@@ -53,6 +58,7 @@
     padding: 0px 10px;
 }
 
+/* Half width column */
 .columnHalf {
     float: left;
     width: 50%;
@@ -60,6 +66,7 @@
     padding: 0px 10px;
 }
 
+/* Styles for images within columns */
 .columnImage {
     border-radius: 15px;
     padding: 10px 10px;
@@ -67,6 +74,7 @@
     width: 350px;
 }
 
+/* Generic title text styles */
 .title {
     color: white;
 }
@@ -75,37 +83,36 @@
     color: white;
 }
 
+/* Generic text styles */
 .text {
     color: white;
     font-size: larger;
 }
 
+/* Separator for mobile layouts */
 .mobileSeparator {
     display: none;
     color: rgba(255, 255, 255, 0);
 }
 
+/* Call-to-action button styles */
 .ctaButton {
     text-decoration: none;
 }
 
-.ctaButton :hover {
+.ctaButton:hover {
     text-decoration: underline;
 }
 
+/* Media query for tablet and smaller desktop screens */
 @media (max-width: 1200px) {
-    .slideImage {
-        height: 40vh;
-    }
-
+    /* Adjust padding for .rowBorder */
     .rowBorder {
         padding: 0px 30px;
     }
 
-    .columnHalf {
-        width: 100%;
-    }
-
+    /* Adjust column widths for responsive layout */
+    .columnHalf,
     .columnThirds {
         width: 100%;
     }
@@ -115,10 +122,16 @@
         width: 200px;
     }
 
+    .slideImage {
+        height: 40vh;
+    }
+
+    /* Display the mobile separator */
     .mobileSeparator {
         display: block;
     }
 
+    /* Adjust font sizes for various text components */
     .title {
         font-size: xx-large;
     }
@@ -128,10 +141,10 @@
     }
 
     .text {
-        font-size: large;
+        font-size: larger;
     }
 
     .testimony {
-        font-size: large;
+        font-size: xx-large;
     }
 }

@@ -1,91 +1,163 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Stylesheets (Main for all pages, Individual Page Styles, Bootstrap) -->
-    <link rel="stylesheet" type="text/css" href="CSS/Main.css">
-    <link rel="stylesheet" type="text/css" href="CSS/Menu.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <!-- Other meta tags and title -->
-    <title>CoffeeTM Home</title>
-    <link rel="icon" type="image/x-icon" href="Images/logoImage.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Stylesheets (Main for all pages, Individual Page Styles, Bootstrap) -->
+	<link href="CSS/Main.css" rel="stylesheet" type="text/css">
+	<link href="CSS/Contact.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"><!-- Other meta tags and title -->
+	<title>CoffeeTM Home</title>
+	<link href="Images/logoImage.png" rel="icon" type="image/x-icon">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
 <body>
-    <!-- Content of the HTML page -->
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-xl fixed-top bg-black navshadow">
-        <div class="container-fluid" style="padding-left: 10%; padding-right: 10%;">
-            <!-- Brand image and name -->
-            <a class="navbar-brand" href="Index.html"><img src="Images/logoImage.png" alt="CoffeeTM Logo" width="70" height="70" class="d-inline-block align-text-left"></a>
-            <a class="link" href="Index.html"><h5 class="title" style="color: white;"><strong>CoffeeTM</strong></h5></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <i class="fa-solid fa-bars" style="color:#fff; font-size: calc(12px + 1.5vh);"></i>
-                </span>
-            </button>
-            <!-- Navbar items -->
-            <div class="collapse navbar-collapse navcenter" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item lispace">
-                        <a class="nav-link navlinks" aria-current="page" href="Index.html" style="color: white;"><h5 class="navtext">Home</h5></a>
-                    </li>
-                    <li class="nav-item lispace">
-                        <a class="nav-link navlinks" href="Menu.html" style="color: white;"><h5 class="navtext">Menu</h5></a>
-                    </li>
-                    <li class="nav-item lispace">
-                        <a class="nav-link navlinks" href="History.html" style="color: white;"><h5 class="navtext">History</h5></a>
-                    </li>
-                    <li class="nav-item lispace">
-                        <a class="nav-link active navlinks" href="Contact.html" style="color: white;"><h5 class="navtext"><u>Contacts</u></h5></a>
-                    </li>
-                    <!-- Mobile elements, placeholder spacers + Icon links -->
-                    <li class="nav-item lispace widthToggle">
-                        <p class="hidden">placeholder</p>
-                    </li>
-                    <li class="nav-item lispace navFooter widthToggle">
-                        <a class="link" href="https://www.facebook.com/profile.php?id=61551658123049" target="_blank"><i class="fa-brands fa-facebook fa-xl socialIcon"></i></a>
-                        <i class="fa-brands fa-facebook fa-xl socialPH"></i>
-                        <a class="link" href="https://www.instagram.com/jameshoward4002/" target="_blank"><i class="fa-brands fa-instagram fa-xl socialIcon"></i></a>
-                        <i class="fa-brands fa-facebook fa-xl socialPH"></i>
-                        <a class="link" href="https://www.youtube.com/channel/UCbDxsDHL6ugOhhohmzBKNNA" target="_blank"><i class="fa-brands fa-youtube fa-xl socialIcon"></i></a>
-                    </li>
-                    <li class="nav-item lispace widthToggle">
-                        <p class="hidden">placeholder</p>
-                    </li>
-                    <!-- Potential method for mobile social media popout -->
-                    <!--<li class="nav-item lispace">
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <img src="./Images/steam_grow_2.gif" alt="Loading...">
+    </div>
+	<!-- Content of the HTML page -->
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-xl fixed-top bg-black navshadow">
+		<div class="container-fluid" style="padding-left: 10%; padding-right: 10%;">
+			<!-- Brand image and name -->
+			<a class="navbar-brand" href="Index.html"><img alt="CoffeeTM Logo" class="d-inline-block align-text-left" height="70" src="Images/logoImage.png" width="70"></a> <a class="link" href="Index.html">
+			<h5 class="title" style="color: white;"><strong>CoffeeTM</strong></h5></a> <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="color:#fff; font-size: calc(12px + 1.5vh);"></i></span></button> <!-- Navbar items -->
+			<div class="collapse navbar-collapse navcenter" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item lispace">
+						<a class="nav-link navlinks" href="Index.html" style="color: white;">
+						<h5 class="navtext">Home</h5></a>
+					</li>
+					<li class="nav-item lispace">
+						<a class="nav-link navlinks" href="Menu.html" style="color: white;">
+						<h5 class="navtext">Menu</h5></a>
+					</li>
+					<li class="nav-item lispace">
+						<a class="nav-link navlinks" href="History.html" style="color: white;">
+						<h5 class="navtext">History</h5></a>
+					</li>
+					<li class="nav-item lispace">
+						<a class="nav-link active navlinks" href="Contact.html" style="color: white;">
+						<h5 class="navtext"><u>Contacts</u></h5></a>
+					</li><!-- Mobile elements, placeholder spacers + Icon links -->
+					<li class="nav-item lispace widthToggle">
+						<p class="hidden">placeholder</p>
+					</li>
+					<li class="nav-item lispace navFooter widthToggle">
+						<a class="link" href="https://www.facebook.com/profile.php?id=61551658123049" target="_blank"><i class="fa-brands fa-facebook fa-xl socialIcon"></i></a> <i class="fa-brands fa-facebook fa-xl socialPH"></i> <a class="link" href="https://www.instagram.com/jameshoward4002/" target="_blank"><i class="fa-brands fa-instagram fa-xl socialIcon"></i></a> <i class="fa-brands fa-facebook fa-xl socialPH"></i> <a class="link" href="https://www.youtube.com/channel/UCbDxsDHL6ugOhhohmzBKNNA" target="_blank"><i class="fa-brands fa-youtube fa-xl socialIcon"></i></a>
+					</li>
+					<li class="nav-item lispace widthToggle">
+						<p class="hidden">placeholder</p>
+					</li><!-- Potential method for mobile social media popout -->
+					<!--<li class="nav-item lispace">
                         <button type="button" data-bs-toggle="collapse" data-bs-target="socialMedia"><h5 class="navtext">Social</h5></button>
                     </li>-->
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Content -->
-    <div 
-        class="masthead"
-        style="background-image: url('./Images/728.jpg');">
-        <div>
-            
-        </div>
-        <br>
-        <br>
-        <br>
-    </div>
-
-
-    <!-- Footer -->
-    <footer>
-        <p class="footerText">Copyright CoffeeTM 2023</p>
-        <a class="link" href="https://www.facebook.com/profile.php?id=61551658123049" target="_blank"><i class="fa-brands fa-facebook fa-lg socialIcon"></i></a>
-        <a class="link" href="https://www.instagram.com/jameshoward4002/" target="_blank"><i class="fa-brands fa-instagram fa-lg socialIcon"></i></a>
-        <a class="link" href="https://www.youtube.com/channel/UCbDxsDHL6ugOhhohmzBKNNA" target="_blank"><i class="fa-brands fa-youtube fa-lg socialIcon"></i></a>
-    </footer>
-
-    <!-- Javascript Scripts-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="JavaScript/Script.js"></script>
-    <script src="https://kit.fontawesome.com/edbe248760.js" crossorigin="anonymous"></script>
+				</ul>
+			</div>
+		</div>
+	</nav><!-- Page Content -->
+	<div class="masthead" style="background-image: url('./Images/728.jpg');">
+		<div>
+			<div class="container mt-5 pt-5">
+				<!-- Embed Google Map -->
+				<div style="padding: 20px 0;">
+					<iframe allowfullscreen height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16849.32781516144!2d164.0645670664868!3d-74.69586909476159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaf6c669bb85f8af5%3A0xf036b99d09a083f8!2sZucchelli%20Station%2C%20Antarctica!5e0!3m2!1sen!2snz!4v1695703635135!5m2!1sen!2snz" style="border:0;" width="100%"></iframe>
+				</div><!-- Separator Line with Padding -->
+				<hr class="thick-hr">
+				<!-- Row with Two Columns -->
+				<div class="row mt-4">
+					<div class="col-lg-6 mb-4"><!-- Placeholder Image, replace with your image -->
+                        <div class="black-box">
+                        <img alt="Contact Image" class="img-fluid" src="Images/krisztina-papp-fg69ALZG7DQ-unsplash.jpg" style="height: 85%;"></div>
+                        </div>
+                        <div class="col-lg-6">
+						<div class="contact-info-box" style="margin: 10%; height: 200px; text-align: center;">
+							<br>
+                            <div class="black-box">
+                                <h5>PH: 0800 83 83 83</h5>
+                                <h5>Email: jimbean@coffeetm.com</h5>
+                                <h5>Mon-Fri 8am-5pm</h5>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<hr class="thick-hr">
+				<!-- Contact Form for Mobile (Accordion Style) -->
+				<div class="d-block d-md-none accordion accordion-colour" id="contactFormAccordion">
+                    <div class="accordion-item accordion-colour">
+                        <h2 class="accordion-header accordion-title accordion-colour-header" id="headingForm">
+                            <button aria-controls="collapseForm" aria-expanded="true" class="accordion-button" data-bs-target="#collapseForm" data-bs-toggle="collapse" style="color: white; text-align: center; background: transparent;" type="button">Contact Form</button>
+                        </h2>
+                        <div aria-labelledby="headingForm" class="accordion-collapse collapse show accordion-content" data-bs-parent="#contactFormAccordion" id="collapseForm">
+                            <div class="accordion-body" style="background-color: rgba(0, 0, 0, 0.75); padding: 20px; margin: 20px 0;">
+								<form action="#" method="post">
+									<div class="row mb-3">
+										<div class="col-md-6">
+											<input class="form-control" name="firstName" placeholder="First Name..." required="" type="text">
+										</div>
+										<div class="col-md-6">
+											<input class="form-control" name="lastName" placeholder="Last Name..." required="" type="text">
+										</div>
+									</div>
+									<div class="row mb-3">
+										<div class="col-md-6">
+											<input class="form-control" name="email" placeholder="Email..." required="" type="email">
+										</div>
+										<div class="col-md-6">
+											<input class="form-control" data-validation="number" data-validation-allowing="negative,number" id="phone_no" name="color" placeholder="Phone Number" required="required" type="text">
+										</div>
+									</div>
+									<div class="mb-3">
+										<textarea class="form-control" name="message" placeholder="Your Message..." rows="4"></textarea>
+									</div>
+									<div class="text-center">
+										<button class="btn btn-primary" type="submit">Submit</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div><!-- Contact Form for Larger Screens -->
+                <div class="black-box form-black-box">
+                    <div class="d-none d-md-block" style="padding: 20px; margin: 20px 0;">
+                        <form action="#" method="post">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <input class="form-control" name="firstName" placeholder="First Name..." required="" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form-control" name="lastName" placeholder="Last Name..." required="" type="text">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <input class="form-control" name="email" placeholder="Email..." required="" type="email">
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form-control" data-validation="number" data-validation-allowing="negative,number" id="phone_no" name="color" placeholder="Phone Number" required="required" type="text">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" name="message" placeholder="Your Message..." rows="4"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div><br>
+			<br>
+			<br>
+		</div><!-- Footer -->
+		<footer>
+			<p class="footerText">Copyright CoffeeTM 2023</p><a class="link" href="https://www.facebook.com/profile.php?id=61551658123049" target="_blank"><i class="fa-brands fa-facebook fa-lg socialIcon"></i></a> <a class="link" href="https://www.instagram.com/jameshoward4002/" target="_blank"><i class="fa-brands fa-instagram fa-lg socialIcon"></i></a> <a class="link" href="https://www.youtube.com/channel/UCbDxsDHL6ugOhhohmzBKNNA" target="_blank"><i class="fa-brands fa-youtube fa-lg socialIcon"></i></a>
+		</footer><!-- Javascript Scripts-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
+		</script> 
+		<script src="JavaScript/LoadingScreen.js">
+		</script> 
+		<script src="https://kit.fontawesome.com/edbe248760.js">
+		</script> 
+	</div>
 </body>
 </html>
