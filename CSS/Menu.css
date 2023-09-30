@@ -62,6 +62,10 @@
     color: white;
 }
 
+.titleSmall {
+    color: white;
+}
+
 .text {
     color: white;
     font-size: larger;
@@ -82,7 +86,7 @@
 
 @media (max-width: 1200px) {
     .rowBorder {
-        padding: 0px 60px;
+        padding: 0px 30px;
     }
 
     .columnHalf {
@@ -101,16 +105,25 @@
         font-size: xx-large;
     }
 
+    .titleSmall {
+        font-size: x-large;
+    }
+
     .text {
-        font-size: xx-large;
+        font-size: large;
     }
 
     .columnImage {
-        width: 70vw;
+        width: 75vw;
+    }
+
+    .qaImage {
+        width: 200px;
+        height: 200px;
     }
 
     .bannerImage {
-        width: 60vw;
+        width: 75vw;
         height: 20vh;
     }
 
