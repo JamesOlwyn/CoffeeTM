@@ -1,8 +1,12 @@
+/* General layout styles */
+
+/* Border styling for rows */
 .rowBorder {
     padding: 0px 30px;
     border: none;
 }
 
+/* Content row styling */
 .contentRow {
     display: block;
     padding: 10px;
@@ -11,18 +15,23 @@
     border-radius: 5px;
 }
 
+/* Clearing floats */
 .contentRow:after {
-	content: "";
-	display: table;
-	clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
+/* Column configurations */
+
+/* Full-width column */
 .columnFull {
     float: left;
     width: 100%;
     text-align: center;
 }
 
+/* One-third column width */
 .columnThirds {
     float: left;
     width: 33%;
@@ -30,6 +39,7 @@
     padding: 0px 10px;
 }
 
+/* Half column width */
 .columnHalf {
     float: left;
     width: 50%;
@@ -37,6 +47,9 @@
     padding: 0px 10px;
 }
 
+/* Image styles */
+
+/* Generic banner image */
 .bannerImage {
     border-radius: 15px;
     padding: 10px 10px;
@@ -44,6 +57,7 @@
     width: 80vw;
 }
 
+/* Image used within columns */
 .columnImage {
     border-radius: 15px;
     padding: 10px 10px;
@@ -51,6 +65,7 @@
     width: 25vw;
 }
 
+/* Question and answer image */
 .qaImage {
     border-radius: 15px;
     padding: 10px 10px;
@@ -58,33 +73,49 @@
     width: 350px;
 }
 
+/* Text styles */
+
+/* Title text */
 .title {
     color: white;
 }
 
+/* General text styling */
 .text {
     color: white;
     font-size: larger;
 }
 
+/* Mobile-specific styles */
+
+/* Separator for mobile, hidden by default */
 .mobileSeparator {
     display: none;
     color: rgba(255, 255, 255, 0);
 }
 
+/* Button styles */
+
+/* Call to action button styling */
 .ctaButton {
     text-decoration: none;
 }
 
-.ctaButton :hover {
+/* Hover effect for call to action button */
+.ctaButton:hover {
     text-decoration: underline;
 }
 
+/* Media query for responsiveness */
+
+/* Adjustments for screens up to 1200px in width */
 @media (max-width: 1200px) {
+    /* Increase padding for row border */
     .rowBorder {
         padding: 0px 60px;
     }
 
+    /* Adjust column widths */
     .columnHalf {
         width: 100%;
     }
@@ -93,10 +124,12 @@
         width: 100%;
     }
 
+    /* Display mobile separator */
     .mobileSeparator {
         display: block;
     }
 
+    /* Adjust text sizes */
     .title {
         font-size: xx-large;
     }
@@ -105,6 +138,7 @@
         font-size: xx-large;
     }
 
+    /* Adjust image widths */
     .columnImage {
         width: 70vw;
     }
@@ -113,8 +147,4 @@
         width: 60vw;
         height: 20vh;
     }
-
 }
-
-
-

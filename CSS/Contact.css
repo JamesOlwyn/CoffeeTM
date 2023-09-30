@@ -1,33 +1,34 @@
-/* contact.css */
+/* Main container for contact section */
 .contact-container {
     font-family: Arial, sans-serif;
     padding: 20px;
     background-color: #000000;
 }
 
-iframe {
+/* Adding rounded corners for iframes and forms */
+iframe, form {
     border-radius: 15px;
 }
 
-form {
-    border-radius: 15px;
-}
-
+/* Style for the main contact form container */
 .contact-form {
     width: 60%;
     margin: 0 auto;
     padding: 20px;
     background-color: #000000;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form input, .contact-form textarea {
+/* Input and textarea styles for the contact form */
+.contact-form input, 
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #000000;
 }
 
+/* Button styles for the contact form */
 .contact-form button {
     padding: 10px 15px;
     background-color: #333;
@@ -36,43 +37,47 @@ form {
     cursor: pointer;
 }
 
+/* Button hover effect */
 .contact-form button:hover {
     background-color: #555;
 }
 
-.contact-box {
+/* General contact box style */
+.contact-box, 
+.contact-form-container {
     background-color: rgba(0, 0, 0, 0.75); 
     padding: 15px;
     color: white;
 }
-.contact-form-container {
-    background-color: rgba(0, 0, 0, 0.75);  
-    margin: 20px 0;
-    color: white; 
-}
 
+
+
+/* A thicker horizontal line style */
 .thick-hr {
     border-top: 3px solid black;
     margin: 20px 0;
 }
 
+/* Generic black box style */
 .black-box {
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.75); /* This creates a black background with 75% opacity */
-    padding: 20px; /* Adjust as needed for spacing */
-    margin-top: 20px; /* Space between the form and the box */
-    color: white; /* Set the text color to white so it contrasts with the black background */
+    background-color: rgba(0, 0, 0, 0.75); 
+    padding: 20px; 
+    margin-top: 20px; 
+    color: white; 
 }
 
+/* Mobile specific styles */
 @media (max-width: 768px) {
+    /* Image adjustments for mobile */
     img[alt="Contact Image"] {
-        padding-left: 0%; /* removes the left padding */
-        width: 100%; /* makes the image take the full width of its container */
-        height: auto; /* keeps the image's aspect ratio */
+        padding-left: 0%;
+        width: 100%; 
+        height: auto; 
     }
-}
-@media (max-width: 768px) { 
+
+    /* Hiding certain form elements on mobile */
     .form-black-box {
-        display: none; /* This will hide the black box on mobile view */
+        display: none; 
     }
 }

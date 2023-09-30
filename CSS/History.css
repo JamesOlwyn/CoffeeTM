@@ -1,37 +1,41 @@
-/* history.css */
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+
+/* Main container for history section */
 .history-container {
     font-family: Arial, sans-serif;
     padding: 20px;
     background-color: #e6e6e6;
 }
 
+/* Generic text styles for history section */
 .history-text {
     line-height: 1.6;
     margin: 20px 0;
 }
 
-/* Global Styles */
-* {
-    box-sizing: border-box;
-}
-
+/* Text color class */
 .black-text {
     color: white;
 }
 
+/* Main content box with generic styles */
 .content-box {
-    background-color: rgba(0, 0, 0, 0.75);  
+    background-color: rgba(0, 0, 0, 0.75);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
     border-radius: 5px;
     margin: 20px 0;
     display: flex;
     justify-content: space-between;
-    width: 100%;  
+    width: 100%;
     margin-bottom: 2rem;
-    color: white; 
+    color: white;
 }
 
+/* Styles specific for text content inside content-box */
 .text-content {
     flex: 0 1 45%;
     font-size: 1.1em;
@@ -41,6 +45,7 @@
     justify-content: flex-start;
 }
 
+/* Image styles inside the content box */
 .content-box img {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     flex: 0 1 40%;
@@ -51,6 +56,7 @@
     align-self: flex-start;
 }
 
+/* Heading styles inside the content box */
 .content-box h3 {
     font-size: 1.5em;
     font-weight: bold;
@@ -59,40 +65,44 @@
     margin-bottom: 10px;
 }
 
+/* Paragraph styles inside the content box */
 .content-box p {
     flex: 1;
     padding: 0 10px;
     color: white;
 }
 
+/* Container with general padding */
 .container {
     padding: 2% 5%;
     max-width: 100%;
 }
 
-
-
+/* Media query for larger screens */
 @media (min-width: 993px) {
+    /* Adjust content box for larger screens */
     .content-box {
         flex-direction: row;
         align-items: center;
         margin-bottom: 30px;
     }
 
+    /* Adjust image width for larger screens */
     .content-box img {
         width: 60%;
     }
 }
 
+/* Media query for smaller screens */
 @media (max-width: 992px) {
-    .content-box img, .content-box p {
+    /* Adjust image and paragraph width for smaller screens */
+    .content-box img, 
+    .content-box p {
         width: 100%;
     }
 
+    /* Adjust content box direction for smaller screens */
     .content-box {
         flex-direction: column;
     }
 }
-
-
-
