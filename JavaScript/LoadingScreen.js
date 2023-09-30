@@ -4,5 +4,5 @@ window.addEventListener('load', function() {
     // Hide the loading screen after 2 seconds (2000 milliseconds)
     setTimeout(function() {
         loadingScreen.style.display = 'none';
-    }, 2000);
+    }, 1000);
 });
